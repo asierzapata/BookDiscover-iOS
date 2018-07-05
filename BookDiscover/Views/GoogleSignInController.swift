@@ -69,6 +69,6 @@ class GoogleSignInController: UIViewController, GIDSignInDelegate, GIDSignInUIDe
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.setupRouting(rootController: segue.destination as! UITabBarController)
-
+        
     }
 }
