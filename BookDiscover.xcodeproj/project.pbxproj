@@ -27,6 +27,11 @@
 		594EF42B20EFE13900A26B95 /* BooksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF42A20EFE13900A26B95 /* BooksActions.swift */; };
 		594EF42D20EFE18D00A26B95 /* BooksReducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF42C20EFE18D00A26B95 /* BooksReducers.swift */; };
 		594EF42F20EFE19900A26B95 /* BooksSelectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF42E20EFE19900A26B95 /* BooksSelectors.swift */; };
+		594EF43220EFE2D300A26B95 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF43120EFE2D300A26B95 /* AppReducer.swift */; };
+		594EF43420EFE3A700A26B95 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF43320EFE3A700A26B95 /* AppRouter.swift */; };
+		594EF43720EFE4A000A26B95 /* RouterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF43620EFE4A000A26B95 /* RouterActions.swift */; };
+		594EF43920EFE4C500A26B95 /* RouterReducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF43820EFE4C500A26B95 /* RouterReducers.swift */; };
+		594EF43B20EFE4EF00A26B95 /* RouterSelectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF43A20EFE4EF00A26B95 /* RouterSelectors.swift */; };
 		8FF624B1C6833F70C76EB47D /* Pods_BookDiscoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423AC31453F156A8ECAE0EF /* Pods_BookDiscoverTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +71,11 @@
 		594EF42A20EFE13900A26B95 /* BooksActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksActions.swift; sourceTree = "<group>"; };
 		594EF42C20EFE18D00A26B95 /* BooksReducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksReducers.swift; sourceTree = "<group>"; };
 		594EF42E20EFE19900A26B95 /* BooksSelectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksSelectors.swift; sourceTree = "<group>"; };
+		594EF43120EFE2D300A26B95 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		594EF43320EFE3A700A26B95 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		594EF43620EFE4A000A26B95 /* RouterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterActions.swift; sourceTree = "<group>"; };
+		594EF43820EFE4C500A26B95 /* RouterReducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterReducers.swift; sourceTree = "<group>"; };
+		594EF43A20EFE4EF00A26B95 /* RouterSelectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSelectors.swift; sourceTree = "<group>"; };
 		62E9A23A092A7E2B0DB662B8 /* Pods-BookDiscover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookDiscover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookDiscover/Pods-BookDiscover.debug.xcconfig"; sourceTree = "<group>"; };
 		6423AC31453F156A8ECAE0EF /* Pods_BookDiscoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookDiscoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C739F04620D6DF8696A54120 /* Pods-BookDiscover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookDiscover.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookDiscover/Pods-BookDiscover.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,8 +224,11 @@
 		594EF42420EFDF7100A26B95 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				594EF43520EFE49200A26B95 /* Router */,
 				594EF42920EFE0C500A26B95 /* Books */,
 				594EF42220EFDEA400A26B95 /* AppState.swift */,
+				594EF43120EFE2D300A26B95 /* AppReducer.swift */,
+				594EF43320EFE3A700A26B95 /* AppRouter.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -258,6 +271,16 @@
 				594EF40820ED2C1700A26B95 /* GoogleSignInController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		594EF43520EFE49200A26B95 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				594EF43620EFE4A000A26B95 /* RouterActions.swift */,
+				594EF43820EFE4C500A26B95 /* RouterReducers.swift */,
+				594EF43A20EFE4EF00A26B95 /* RouterSelectors.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		D6256A7B5079DF31FCA920B3 /* Pods */ = {
@@ -471,11 +494,16 @@
 				594EF41420ED487300A26B95 /* ExploreViewController.swift in Sources */,
 				594EF41220ED485500A26B95 /* ProfileViewController.swift in Sources */,
 				594EF40D20ED47F700A26B95 /* Routers.swift in Sources */,
+				594EF43720EFE4A000A26B95 /* RouterActions.swift in Sources */,
+				594EF43220EFE2D300A26B95 /* AppReducer.swift in Sources */,
 				594EF41F20EEA10B00A26B95 /* ImageService.swift in Sources */,
 				594EF41620ED488300A26B95 /* LibraryViewController.swift in Sources */,
+				594EF43420EFE3A700A26B95 /* AppRouter.swift in Sources */,
 				594EF42B20EFE13900A26B95 /* BooksActions.swift in Sources */,
 				594EF40920ED2C1700A26B95 /* GoogleSignInController.swift in Sources */,
 				594EF42F20EFE19900A26B95 /* BooksSelectors.swift in Sources */,
+				594EF43920EFE4C500A26B95 /* RouterReducers.swift in Sources */,
+				594EF43B20EFE4EF00A26B95 /* RouterSelectors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

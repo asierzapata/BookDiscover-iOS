@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import ReSwift
 import Firebase
 import GoogleSignIn
 import Compass
+
+var store = Store<AppState>(reducer: appReducer, state: nil)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+
     var postLoginRouter = Router()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
