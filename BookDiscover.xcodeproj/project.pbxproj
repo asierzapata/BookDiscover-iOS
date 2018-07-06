@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3EDC52451FF44DB378D5A27F /* Pods_BookDiscover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDE32A808108FEBDE4F4FB4 /* Pods_BookDiscover.framework */; };
 		594EF3DF20ED076000A26B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF3DE20ED076000A26B95 /* AppDelegate.swift */; };
-		594EF3E120ED076000A26B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF3E020ED076000A26B95 /* ViewController.swift */; };
 		594EF3E420ED076000A26B95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594EF3E220ED076000A26B95 /* Main.storyboard */; };
 		594EF3E620ED076200A26B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594EF3E520ED076200A26B95 /* Assets.xcassets */; };
 		594EF3E920ED076200A26B95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594EF3E720ED076200A26B95 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,10 @@
 		594EF41620ED488300A26B95 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF41520ED488300A26B95 /* LibraryViewController.swift */; };
 		594EF41C20EE95D500A26B95 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF41B20EE95D500A26B95 /* SearchViewController.swift */; };
 		594EF41F20EEA10B00A26B95 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF41E20EEA10B00A26B95 /* ImageService.swift */; };
+		594EF42320EFDEA400A26B95 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF42220EFDEA400A26B95 /* AppState.swift */; };
+		594EF42B20EFE13900A26B95 /* BooksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF42A20EFE13900A26B95 /* BooksActions.swift */; };
+		594EF42D20EFE18D00A26B95 /* BooksReducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF42C20EFE18D00A26B95 /* BooksReducers.swift */; };
+		594EF42F20EFE19900A26B95 /* BooksSelectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EF42E20EFE19900A26B95 /* BooksSelectors.swift */; };
 		8FF624B1C6833F70C76EB47D /* Pods_BookDiscoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423AC31453F156A8ECAE0EF /* Pods_BookDiscoverTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +45,6 @@
 		4ABAFAF0759955D7F447CE21 /* Pods-BookDiscoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookDiscoverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookDiscoverTests/Pods-BookDiscoverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		594EF3DB20ED076000A26B95 /* BookDiscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookDiscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		594EF3DE20ED076000A26B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		594EF3E020ED076000A26B95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		594EF3E320ED076000A26B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		594EF3E520ED076200A26B95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		594EF3E820ED076200A26B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,10 @@
 		594EF41520ED488300A26B95 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		594EF41B20EE95D500A26B95 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		594EF41E20EEA10B00A26B95 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		594EF42220EFDEA400A26B95 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		594EF42A20EFE13900A26B95 /* BooksActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksActions.swift; sourceTree = "<group>"; };
+		594EF42C20EFE18D00A26B95 /* BooksReducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksReducers.swift; sourceTree = "<group>"; };
+		594EF42E20EFE19900A26B95 /* BooksSelectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksSelectors.swift; sourceTree = "<group>"; };
 		62E9A23A092A7E2B0DB662B8 /* Pods-BookDiscover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookDiscover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookDiscover/Pods-BookDiscover.debug.xcconfig"; sourceTree = "<group>"; };
 		6423AC31453F156A8ECAE0EF /* Pods_BookDiscoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookDiscoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C739F04620D6DF8696A54120 /* Pods-BookDiscover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookDiscover.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookDiscover/Pods-BookDiscover.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 		594EF3DD20ED076000A26B95 /* BookDiscover */ = {
 			isa = PBXGroup;
 			children = (
+				594EF42620EFDF8600A26B95 /* API */,
+				594EF42520EFDF7D00A26B95 /* Middlewares */,
+				594EF42420EFDF7100A26B95 /* Modules */,
 				594EF41D20EEA09100A26B95 /* Services */,
 				594EF40720ED2BFD00A26B95 /* Views */,
 				594EF40420ED2A6800A26B95 /* View Designs */,
@@ -153,12 +162,11 @@
 		594EF40720ED2BFD00A26B95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				594EF43020EFE1AB00A26B95 /* Login */,
 				594EF41A20EE95C700A26B95 /* Search */,
 				594EF41020ED483F00A26B95 /* Library */,
 				594EF40F20ED483A00A26B95 /* Explore */,
 				594EF40E20ED483300A26B95 /* Profile */,
-				594EF3E020ED076000A26B95 /* ViewController.swift */,
-				594EF40820ED2C1700A26B95 /* GoogleSignInController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +209,55 @@
 				594EF41E20EEA10B00A26B95 /* ImageService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		594EF42420EFDF7100A26B95 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				594EF42920EFE0C500A26B95 /* Books */,
+				594EF42220EFDEA400A26B95 /* AppState.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		594EF42520EFDF7D00A26B95 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		594EF42620EFDF8600A26B95 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				594EF42720EFDF9400A26B95 /* Parsers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		594EF42720EFDF9400A26B95 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		594EF42920EFE0C500A26B95 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				594EF42A20EFE13900A26B95 /* BooksActions.swift */,
+				594EF42C20EFE18D00A26B95 /* BooksReducers.swift */,
+				594EF42E20EFE19900A26B95 /* BooksSelectors.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		594EF43020EFE1AB00A26B95 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				594EF40820ED2C1700A26B95 /* GoogleSignInController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D6256A7B5079DF31FCA920B3 /* Pods */ = {
@@ -345,6 +402,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -353,6 +411,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,8 +463,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				594EF41C20EE95D500A26B95 /* SearchViewController.swift in Sources */,
-				594EF3E120ED076000A26B95 /* ViewController.swift in Sources */,
 				594EF40620ED2A9100A26B95 /* RoundUIView.swift in Sources */,
+				594EF42D20EFE18D00A26B95 /* BooksReducers.swift in Sources */,
+				594EF42320EFDEA400A26B95 /* AppState.swift in Sources */,
 				594EF3FF20ED10AF00A26B95 /* RoutingSetup.swift in Sources */,
 				594EF3DF20ED076000A26B95 /* AppDelegate.swift in Sources */,
 				594EF41420ED487300A26B95 /* ExploreViewController.swift in Sources */,
@@ -413,7 +473,9 @@
 				594EF40D20ED47F700A26B95 /* Routers.swift in Sources */,
 				594EF41F20EEA10B00A26B95 /* ImageService.swift in Sources */,
 				594EF41620ED488300A26B95 /* LibraryViewController.swift in Sources */,
+				594EF42B20EFE13900A26B95 /* BooksActions.swift in Sources */,
 				594EF40920ED2C1700A26B95 /* GoogleSignInController.swift in Sources */,
+				594EF42F20EFE19900A26B95 /* BooksSelectors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@ target 'BookDiscover' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'ReSwift'
 
   target 'BookDiscoverTests' do
     inherit! :search_paths
