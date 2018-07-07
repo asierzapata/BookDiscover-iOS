@@ -8,7 +8,16 @@
 
 import ReSwift
 
-func routingReducer(action: Action, state: RoutingState?) -> RoutingState {
-    let state = state ?? RoutingState()
+func routerReducer(action: Action, state: RoutingState?) -> RoutingState {
+    var state = state ?? RoutingState()
+    
+    switch action {
+        case let routingAction as RouterAction:
+            state.navigationState = routingAction.destination
+        case let loginSuccessful as LoginSuccessful:
+            state.tabViewController = loginSuccessful.tabViewController
+        default: break
+    }
+    
     return state
 }

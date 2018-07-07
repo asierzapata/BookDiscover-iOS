@@ -6,15 +6,38 @@
 //  Copyright © 2018 Asier Zapata. All rights reserved.
 //
 
-import Foundation
+import ReSwift
 import UIKit
 
 class LibraryViewController: UIViewController {
     
-    @IBOutlet weak var TabIcon: UITabBarItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        store.subscribe(self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        store.unsubscribe(self)
+    }
+    
+    @IBAction func searchPressed(_ sender: Any) {
+        print(">>>>> search pressed")
+        store.dispatch(RouterAction(destination: .search))
+    }
+    
+}
+
+// MARK: - StoreSubscriber
+extension LibraryViewController: StoreSubscriber {
+    func newState(state: AppState) {
+        //
+        print(">>>>> new state from library",state)
     }
 }

@@ -7,4 +7,12 @@
 //  Copyright © 2018 Asier Zapata. All rights reserved.
 //
 
-import Foundation
+import ReSwift
+
+struct RouterAction: Action {
+    let destination: RoutingDestination
+}
+
+struct LoginSuccessful: Action {
+    let tabViewController: UITabBarController
+}

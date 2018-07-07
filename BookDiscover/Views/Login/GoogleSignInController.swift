@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ReSwift
 import Firebase
 import GoogleSignIn
 import Compass
@@ -24,9 +25,6 @@ class GoogleSignInController: UIViewController, GIDSignInDelegate, GIDSignInUIDe
         GIDSignIn.sharedInstance().signIn()
         
         SignInButton.colorScheme = GIDSignInButtonColorScheme.dark
-        
-        // TODO(developer) Configure the sign-in button look/feel
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -67,8 +65,7 @@ class GoogleSignInController: UIViewController, GIDSignInDelegate, GIDSignInUIDe
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.setupRouting(rootController: segue.destination as! UITabBarController)
-        
+        let tabController = segue.destination as! UITabBarController
+        store.dispatch(LoginSuccessful(tabViewController: tabController))
     }
 }
